@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Konversi Suhu</h1>
+
+      <form onsubmit="submitForm(event)" id="formKonversiSuhu">
+        <label id="labelKonversi"></label>
+        <input
+          type="number"
+          name="nilaiKonversi"
+          id="nilaiKonversi"
+          autofocus
+          value="0"
+        />
+        <div class="action">
+          <button type="submit">Konversi</button>
+          <button type="reset" id="resetButton">Reset</button>
+          <button type="button" id="revertButton" onclick="revertSuhu()">
+            Revert
+          </button>
+        </div>
+        <label id="labelHasil"></label>
+        <input type="number" name="hasil" id="hasil" disabled />
+      </form>
+
+      <label>Cara Kalkulasi:</label>
+      <p id="caraKalkulasi"></p>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
